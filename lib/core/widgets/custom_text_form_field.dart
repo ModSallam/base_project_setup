@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '/core/extensions/extensions.dart';
 
+import '../my_extensions/my_extensions.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_text_field_border_styles.dart';
 import '../utils/app_text_styles.dart';

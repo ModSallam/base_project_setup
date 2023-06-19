@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../core/widgets/custom_block_container.dart';
-import '../../../../core/widgets/custom_shadow.dart';
-import '../../../../core/extensions/extensions.dart';
 
+import '../../../../core/my_extensions/my_extensions.dart';
 import '../../../../core/utils/assets_manager.dart';
 import '../../../../core/utils/constants.dart';
+import '../../../../core/widgets/custom_block_container.dart';
+import '../../../../core/widgets/custom_shadow.dart';
 // import '../../../../core/widgets/custom_loading.dart';
 
 class SplashBody extends StatelessWidget {

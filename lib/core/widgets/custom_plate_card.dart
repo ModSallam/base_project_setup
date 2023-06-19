@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../utils/app_strings.dart';
-import '/core/extensions/extensions.dart';
+import '../my_extensions/my_extensions.dart';
 import '../utils/app_colors.dart';
+import '../utils/app_strings.dart';
 import '../utils/constants.dart';
 import 'custom_cached_network_image.dart';
 import 'custom_text_button.dart';

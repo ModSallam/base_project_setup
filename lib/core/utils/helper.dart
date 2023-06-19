@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:month_picker_dialog/month_picker_dialog.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../../core/extensions/extensions.dart';
+import '../my_extensions/my_extensions.dart';
 import 'app_colors.dart';
 import 'app_strings.dart';
 import 'app_text_styles.dart';

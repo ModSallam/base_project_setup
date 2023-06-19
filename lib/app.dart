@@ -12,8 +12,8 @@ import 'features/splash/presentation/controllers/locale_cubit/locale_cubit.dart'
 import 'features/splash/presentation/controllers/splash_cubit/splash_cubit.dart';
 import 'injector.dart' as injector;
 
-class KazlakApp extends StatelessWidget {
-  const KazlakApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {

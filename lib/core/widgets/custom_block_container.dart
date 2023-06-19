@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
+import '../my_extensions/my_extensions.dart';
 import '../utils/app_colors.dart';
-import '../extensions/extensions.dart';
 
 class CustomBlockContainer extends StatelessWidget {
   const CustomBlockContainer({

@@ -17,6 +17,6 @@ Future<void> main() async {
   Bloc.observer = AppBlocObserver();
   HydratedBloc.storage = storage;
   runApp(
-    const KazlakApp(),
+    const MainApp(),
   );
 }
