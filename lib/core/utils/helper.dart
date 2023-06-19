@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:month_picker_dialog/month_picker_dialog.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:uuid/uuid.dart';
 
 import '../my_extensions/my_extensions.dart';
 import 'app_colors.dart';
@@ -298,6 +299,65 @@ class Helper {
       return AppColors.green;
     } else {
       return AppColors.lightRed;
+    }
+  }
+
+  static String creatId() {
+    const uuid = Uuid();
+    return uuid.v4();
+  }
+
+  static bool emailValid({
+    required String email,
+  }) =>
+      RegExp(
+        r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+",
+      ).hasMatch(
+        email,
+      );
+
+  static String? emailValidator({
+    required String? email,
+  }) {
+    if (email == null) {
+      return AppStrings.emailIsRequired;
+    } else if (email.isEmpty) {
+      return AppStrings.emailIsRequired;
+    } else {
+      final bool isEmailValid = emailValid(email: email);
+      if (isEmailValid) {
+        return null;
+      } else {
+        return AppStrings.enterValidEmail;
+      }
+    }
+  }
+
+  static String? passwordValidator({
+    required String? password,
+  }) {
+    if (password == null) {
+      return AppStrings.passwordIsRequired;
+    } else if (password.isEmpty) {
+      return AppStrings.passwordIsRequired;
+    } else {
+      if (password.length > 7) {
+        return null;
+      } else {
+        return AppStrings.passwordLimit;
+      }
+    }
+  }
+
+  static String? textValidator({
+    required String? value,
+  }) {
+    if (value == null) {
+      return AppStrings.fieldIsRequired;
+    } else if (value.isEmpty) {
+      return AppStrings.fieldIsRequired;
+    } else {
+      return null;
     }
   }
 }

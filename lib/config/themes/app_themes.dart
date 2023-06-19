@@ -24,6 +24,11 @@ ThemeData appTheme() {
         fontWeight: FontWeight.bold,
       ),
     ),
+    textSelectionTheme: TextSelectionThemeData(
+      cursorColor: AppColors.primary,
+      selectionColor: AppColors.primary,
+      selectionHandleColor: AppColors.primary,
+    ),
     appBarTheme: AppBarTheme(
       centerTitle: true,
       elevation: 0.0,
