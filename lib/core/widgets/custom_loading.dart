@@ -24,13 +24,9 @@ class CustomLoading extends StatelessWidget {
                 color: AppColors.splash.withOpacity(0.4),
                 borderRadius: BorderRadius.circular(Constants.borderRadius),
               ),
-              child: CircularProgressIndicator.adaptive(
-                backgroundColor: AppColors.primary,
-              ),
+              child: const CircularProgressIndicator.adaptive(),
             )
-          : CircularProgressIndicator.adaptive(
-              backgroundColor: AppColors.primary,
-            ),
+          : const CircularProgressIndicator.adaptive(),
     );
   }
 }

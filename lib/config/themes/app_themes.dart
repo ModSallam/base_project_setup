@@ -14,6 +14,9 @@ ThemeData appTheme() {
     indicatorColor: AppColors.primary,
     scaffoldBackgroundColor: AppColors.black,
     fontFamily: AppStrings.fontFamily,
+    progressIndicatorTheme: ProgressIndicatorThemeData(
+      color: AppColors.primary,
+    ),
     textTheme: const TextTheme(
       bodyMedium: TextStyle(
         height: 1.5,

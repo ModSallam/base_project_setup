@@ -36,26 +36,6 @@ class BottomNavBarBody extends StatelessWidget {
             ),
             label: 'Home',
           ),
-          const NavigationDestination(
-            icon: CustomSvgAssetPicture(
-              assetName: AssetsManager.orderIconPath,
-            ),
-            selectedIcon: CustomSvgAssetPicture(
-              assetName: AssetsManager.selectedOrderIconPath,
-            ),
-            label: 'Order',
-          ),
-          NavigationDestination(
-            icon: CustomSvgAssetPicture(
-              assetName: AssetsManager.marketIconPath,
-              color: AppColors.primary,
-            ),
-            selectedIcon: CustomSvgAssetPicture(
-              assetName: AssetsManager.marketIconPath,
-              color: AppColors.white,
-            ),
-            label: 'Market',
-          ),
           NavigationDestination(
             icon: CustomSvgAssetPicture(
               assetName: AssetsManager.profileIconPath,

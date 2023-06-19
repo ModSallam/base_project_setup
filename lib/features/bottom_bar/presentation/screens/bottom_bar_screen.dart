@@ -16,8 +16,6 @@ class BottomBarScreen extends StatelessWidget {
         children: [
           Container(),
           Container(),
-          Container(),
-          Container(),
         ],
       ),
       bottomNavigationBar: const BottomNavBarBody(),
